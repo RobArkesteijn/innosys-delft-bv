@@ -3,7 +3,7 @@
     <h2 class="home-frequently-asked__title">Frequently Asked Questions</h2>
     <UAccordion :items="items" class="home-frequently-asked__accordion">
       <template #default="{ item, index, open }">
-        <UButton class="home-frequently-asked__question">
+        <UButton class="home-frequently-asked__question" color="gray">
           <template #leading>
             <div
               class="w-6 h-6 rounded-full bg-primary-500 dark:bg-primary-400 flex items-center justify-center -my-1"

@@ -2,7 +2,7 @@
   <div class="google-maps">
     <GoogleMap
       class="google-maps__map"
-      api-key="AIzaSyCDX6CkTNhebp_nmwNDIquMeT1uvFjED50"
+      :api-key="$config.googleMapsApiKey"
       style="width: 100%; height: 500px"
       :center="center"
       :zoom="15"
