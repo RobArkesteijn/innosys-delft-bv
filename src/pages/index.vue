@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <OgImage v-bind="ogImageOptions" />
     <HomeHero />
     <div class="home__content">
       <HomeCarousel />
@@ -21,13 +22,16 @@ useHead({
     { property: 'og:title', content: 'this is og title for the projects page' },
     { name: 'description', content: '[og:description]' },
     { name: 'og:description', content: '[description]' },
-    { name: 'og:image', content: '[og:image]' },
     { name: 'twitter:title', content: '[twitter:title]' },
     { name: 'twitter:description', content: '[twitter:description]' },
     { name: 'twitter:image', content: '[twitter:image]' },
     { name: 'twitter:card', content: 'summary' },
   ],
 });
+
+const ogImageOptions = {
+  title: 'My awesome home page.',
+};
 </script>
 
 <style scoped lang="scss">

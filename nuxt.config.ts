@@ -18,12 +18,16 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+  runtimeConfig: {
+    googleMapsApiKey: '',
+  },
   modules: [
     'vue3-carousel-nuxt',
     '@nuxt/image',
     'nuxt-icon',
     '@vee-validate/nuxt',
     '@nuxt/ui',
+    'nuxt-og-image',
   ],
   image: {
     format: ['webp'],
@@ -31,7 +35,7 @@ export default defineNuxtConfig({
   ui: {
     global: true,
     safelistColors: ['innosysShaft'],
-    icons: ['material-symbols']
+    icons: ['material-symbols'],
   },
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',

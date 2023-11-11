@@ -1,10 +1,10 @@
 export default defineAppConfig({
   ui: {
-    primary: 'innosysBlue',
-    gray: 'cool',
+    primary: 'innosysblue',
+    gray: 'innosysshaft',
     button: {
       default: {
-        color: 'innosysShaft',
+        color: 'innosysshaft',
       },
     },
   },
