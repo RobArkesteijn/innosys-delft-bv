@@ -35,5 +35,6 @@
     "className",
     "ngClass",
     "ui"
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

@@ -1,11 +1,12 @@
 <template>
   <div class="home">
-    <OgImage v-bind="ogImageOptions" />
     <HomeHero />
     <div class="home__content">
-      <HomeCarousel />
+      <HomeCarouselUI />
       <HomeServices />
-      <HomeFrequentlyAsked />
+      <ClientOnly>
+        <HomeFrequentlyAsked />
+      </ClientOnly>
       <HomeContactSection />
     </div>
   </div>
@@ -28,10 +29,6 @@ useHead({
     { name: 'twitter:card', content: 'summary' },
   ],
 });
-
-const ogImageOptions = {
-  title: 'My awesome home page.',
-};
 </script>
 
 <style scoped lang="scss">

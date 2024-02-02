@@ -1,7 +1,7 @@
 export default defineAppConfig({
   ui: {
-    primary: 'innosysblue',
-    gray: 'innosysshaft',
+    primary: 'innosysshaft',
+    gray: 'stone',
     button: {
       default: {
         color: 'innosysshaft',

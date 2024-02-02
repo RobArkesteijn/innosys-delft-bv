@@ -6,7 +6,7 @@
         <UButton class="home-frequently-asked__question" color="gray">
           <template #leading>
             <div
-              class="w-6 h-6 rounded-full bg-primary-500 dark:bg-primary-400 flex items-center justify-center -my-1"
+              class="w-6 h-6 rounded-full bg-gray-900 flex items-center justify-center -my-1"
             >
               <UIcon
                 :name="item.icon"
@@ -79,7 +79,7 @@ const items = [
 
   &__answer {
     padding: 20px 40px;
-    border: solid 1px $primary;
+    border: solid 1px $mine-shaft;
     font-weight: 300;
     line-height: 150%;
   }

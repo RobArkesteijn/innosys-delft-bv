@@ -11,13 +11,17 @@
       :validate="validate"
       @submit="onSubmit"
     >
-      <UFormGroup label="Name" name="name" class="contact-form__field">
+      <UFormGroup label="Name" name="name" class="contact-form__field mr-5">
         <UInput v-model="state.name" />
       </UFormGroup>
-      <UFormGroup label="Email" name="email" class="contact-form__field">
+      <UFormGroup label="Email" name="email" class="contact-form__field mr-5">
         <UInput v-model="state.email" />
       </UFormGroup>
-      <UFormGroup label="Message" name="message" class="contact-form__field">
+      <UFormGroup
+        label="Message"
+        name="message"
+        class="contact-form__field mr-5"
+      >
         <UTextarea v-model="state.message" />
       </UFormGroup>
       <UButton

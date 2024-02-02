@@ -27,7 +27,6 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@vee-validate/nuxt',
     '@nuxt/ui',
-    'nuxt-og-image',
   ],
   image: {
     format: ['webp'],
@@ -36,9 +35,6 @@ export default defineNuxtConfig({
     global: true,
     safelistColors: ['innosysShaft'],
     icons: ['material-symbols'],
-  },
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
   },
   colorMode: {
     classSuffix: '',

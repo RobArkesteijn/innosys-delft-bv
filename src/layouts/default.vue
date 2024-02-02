@@ -1,13 +1,3 @@
-<script setup>
-const route = useRoute();
-const head = useHead({
-  addDirAttribute: true,
-  identifierAttribute: 'id',
-  addSeoAttributes: true,
-});
-const title = computed(() => route.meta.title);
-</script>
-
 <template>
   <div>
     <Html lang="en">
@@ -34,8 +24,49 @@ const title = computed(() => route.meta.title);
         </template>
       </Head>
       <Body>
-        <slot />
+        <main class="layout" :style="backgroundStyles">
+          <slot />
+        </main>
       </Body>
     </Html>
   </div>
 </template>
+
+<script setup lang="ts">
+const route = useRoute();
+const img = useImage();
+
+const head = useHead({
+  addDirAttribute: true,
+  identifierAttribute: 'id',
+  addSeoAttributes: true,
+});
+
+const title = computed(() => route.meta.title);
+
+const backgroundStyles = computed(() => {
+  const imgUrl = img('/stained-wall.jpg', {
+    modifiers: { quality: 10, format: 'webp' },
+  });
+  return { backgroundImage: `url('${imgUrl}')` };
+});
+</script>
+
+<style lang="scss" scoped>
+.layout {
+  position: relative;
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+</style>
