@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss';
+import type { Config } from 'tailwindcss'
 
 export default <Partial<Config>>{
   content: ['docs/content/**/*.md'],
@@ -17,6 +17,19 @@ export default <Partial<Config>>{
           800: '#05263d',
           900: '#02131c',
         },
+        innosysred: {
+          50: '#fff1f1',
+          100: '#ffdfdf',
+          200: '#ffc5c5',
+          300: '#ff9d9d',
+          400: '#ff6566',
+          500: '#ff3435',
+          600: '#ee2829',
+          700: '#c70e0f',
+          800: '#a41011',
+          900: '#881415',
+          950: '#4a0505',
+        },
         innosysshaft: {
           100: '#f2f2f2',
           200: '#d9d9d9',
@@ -31,4 +44,4 @@ export default <Partial<Config>>{
       },
     },
   },
-};
+}
